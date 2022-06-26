@@ -24,7 +24,7 @@ const ChatUi = () => {
                         <Dialog.Panel>
                             <div className=" absolute top-0 left-0 bottom-0 sm:top-auto sm:left-auto sm:right-5 sm:bottom-7 h-full w-full sm:h-[621px] sm:w-[400px]  z-10 bg-white sm:rounded-[18px] shadow-shadow1">
                                 <Transition.Child
-                                    enter=" delay-200 ease-out duration-300"
+                                    enter=" delay-[300ms] ease-out duration-300"
                                     enterFrom="opacity-0"
                                     enterTo="opacity-100"
                                     leave="ease-in duration-400"
@@ -33,7 +33,7 @@ const ChatUi = () => {
                                 >
                                     <div className=" bg-gradient-to-r px-3 pl-12 py-5  from-orange-500 to-orange-600 w-full h-[257px] sm:rounded-t-[18px] text-white">
                                         <Transition.Child
-                                            enter="delay-500 ease-out duration-300"
+                                            enter="delay-[500ms] ease-out duration-300"
                                             enterFrom="opacity-0"
                                             enterTo="opacity-100"
                                             leave="ease-in duration-200"
@@ -48,7 +48,7 @@ const ChatUi = () => {
                                             </p>
                                         </Transition.Child>
                                         <Transition.Child
-                                            enter="delay-500 ease-out duration-300"
+                                            enter="delay-[500ms] ease-out duration-300"
                                             enterFrom="opacity-0"
                                             enterTo="opacity-100"
                                             leave="ease-in duration-200"
