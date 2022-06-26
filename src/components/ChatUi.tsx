@@ -14,14 +14,15 @@ const ChatUi = () => {
                     </Dialog.Backdrop>
                     <Transition.Child
                         enter="ease-out duration-300"
-                        enterFrom="opacity-0"
-                        enterTo="opacity-100"
+                        enterFrom="opacity-0 scale-50"
+                        enterTo="opacity-100 scale-100"
                         leave="ease-in duration-200"
-                        leaveFrom="opacity-100"
-                        leaveTo="opacity-0"
+                        leaveFrom="opacity-100 scale-100"
+                        leaveTo="opacity-0 scale-50"
+                        className={"float-right"}
                     >
                         <Dialog.Panel>
-                            <div className="absolute top-0 left-0 bottom-0 sm:top-auto sm:left-auto sm:right-5 sm:bottom-7 h-full w-full sm:h-[621px] sm:w-[400px]  z-10 bg-white sm:rounded-[18px] shadow-shadow1">
+                            <div className=" absolute top-0 left-0 bottom-0 sm:top-auto sm:left-auto sm:right-5 sm:bottom-7 h-full w-full sm:h-[621px] sm:w-[400px]  z-10 bg-white sm:rounded-[18px] shadow-shadow1">
                                 <Transition.Child
                                     enter=" delay-200 ease-out duration-300"
                                     enterFrom="opacity-0"
@@ -117,7 +118,7 @@ const ChatUi = () => {
                 </Dialog>
             </Transition>
 
-            <div onClick={(e) => setIsOpen(true)} className=" z-[2] absolute right-8 bottom-10 p-4 rounded-full bg-orange-400 shadow-lg shadow-orange-700">
+            <div onClick={(e) => setIsOpen(true)} className="  absolute right-8 bottom-10 p-4 rounded-full bg-orange-400 shadow-lg shadow-orange-700">
                 <img src="/img/robot.svg" alt="robot" className="w-6 h-6"></img>
             </div>
         </div>
