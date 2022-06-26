@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ChevronUpIcon } from "@heroicons/react/outline"
+import ChatUi from "./components/ChatUi";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=' relative w-full h-screen  bg-white  '>
+      <div className=" text-center text-xl h-full flex flex-col justify-center ">
+        Click the robot button
+        <br />
+        <span className="font-bold">This webite is made Using React.js, TailwindCSS and HeadlessUI.</span>
+        <br />
+        <span className="text-lg ">HeadlessUI is made by Tailwindcss and it is used for transitions and dialog purpose in this project</span>
+      </div>
+
+      <ChatUi></ChatUi>
     </div>
   );
 }
